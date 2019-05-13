@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/*初始化代码*/
+body, div, ul, li, a, span, p, b, i, s, img, input {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none;
+  display: inline-block; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer; }
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%; }
+
+/*外盒*/
+.box {
+  width: 10rem;
+  height: 17.7866666667rem;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative; }
+
+/*内盒*/
+.welcome {
+  width: 40rem;
+  height: 17.7866666667rem;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s; }
+  .welcome #page1, .welcome #page2, .welcome #page3, .welcome #page4 {
+    width: 10rem;
+    height: 17.7866666667rem;
+    position: relative;
+    overflow: hidden; }
+    .welcome #page1 .background, .welcome #page2 .background, .welcome #page3 .background, .welcome #page4 .background {
+      width: 10rem;
+      height: 17.7866666667rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1; }
+    .welcome #page1 .last, .welcome #page1 .next, .welcome #page1 .into, .welcome #page2 .last, .welcome #page2 .next, .welcome #page2 .into, .welcome #page3 .last, .welcome #page3 .next, .welcome #page3 .into, .welcome #page4 .last, .welcome #page4 .next, .welcome #page4 .into {
+      width: 1.6rem;
+      height: 0.5333333333rem;
+      line-height: 0.5333333333rem;
+      box-sizing: border-box;
+      border: 0.0266666667rem solid #ffffff;
+      border-radius: 25% 25% 25% 25%;
+      color: #ffffff;
+      font-size: 0.2933333333rem;
+      text-align: center;
+      position: absolute; }
+    .welcome #page1 .last, .welcome #page2 .last, .welcome #page3 .last, .welcome #page4 .last {
+      left: 0.4rem;
+      top: 0.4rem; }
+    .welcome #page1 .next, .welcome #page1 .into, .welcome #page2 .next, .welcome #page2 .into, .welcome #page3 .next, .welcome #page3 .into, .welcome #page4 .next, .welcome #page4 .into {
+      right: 0.4rem;
+      top: 0.4rem; }
+  .welcome #page1 .circle0 {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50% 50%;
+    background: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 3.4rem;
+    left: 1.8rem;
+    display: none; }
+  .welcome #page1 .circle1 {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50% 50%;
+    background: white;
+    position: absolute;
+    top: 3.6rem;
+    left: 2rem;
+    display: none; }
+  .welcome #page1 .vegetable {
+    width: 1.6266666667rem;
+    height: 2.7333333333rem;
+    position: absolute;
+    top: 5.16rem;
+    left: 4.7333333333rem;
+    display: none; }
+  .welcome #page1 .solanum {
+    width: 1.3733333333rem;
+    height: 2.44rem;
+    position: absolute;
+    top: 5.2rem;
+    left: 2.2266666667rem;
+    display: none; }
+  .welcome #page1 .carrot {
+    width: 1.68rem;
+    height: 3.24rem;
+    position: absolute;
+    top: 4.88rem;
+    left: 6.52rem;
+    display: none; }
+  .welcome #page1 .apple {
+    width: 1.56rem;
+    height: 1.84rem;
+    position: absolute;
+    top: 6.48rem;
+    left: 6.9066666667rem;
+    display: none; }
+  .welcome #page1 .orange {
+    width: 1.56rem;
+    height: 1.52rem;
+    position: absolute;
+    top: 7.0533333333rem;
+    left: 5.84rem;
+    display: none; }
+  .welcome #page1 .pear {
+    width: 1.5866666667rem;
+    height: 2.2933333333rem;
+    position: absolute;
+    top: 6.2133333333rem;
+    left: 3.3333333333rem;
+    display: none; }
+  .welcome #page1 .tomato {
+    width: 1.5333333333rem;
+    height: 1.6533333333rem;
+    position: absolute;
+    top: 7.0133333333rem;
+    left: 2.0133333333rem;
+    display: none; }
+  .welcome #page1 .peach {
+    width: 1.6666666667rem;
+    height: 1.56rem;
+    position: absolute;
+    top: 7.0933333333rem;
+    left: 4.5333333333rem;
+    display: none; }
+  .welcome #page2 .layer {
+    width: 7.7733333333rem;
+    height: 7.6933333333rem;
+    position: absolute;
+    top: -7.7733333333rem;
+    left: 1.12rem; }
+  .welcome #page2 .earth {
+    width: 7.1466666667rem;
+    height: 4.9333333333rem;
+    position: absolute;
+    top: 5.3066666667rem;
+    left: 1.3466666667rem;
+    display: none; }
+  .welcome #page2 .vegetable {
+    width: 1.6266666667rem;
+    height: 2.7333333333rem;
+    position: absolute;
+    top: -2.7333333333rem;
+    left: 4.64rem; }
+  .welcome #page2 .solanum {
+    width: 1.3733333333rem;
+    height: 2.44rem;
+    position: absolute;
+    top: -2.44rem;
+    left: 2.1333333333rem; }
+  .welcome #page2 .carrot {
+    width: 1.68rem;
+    height: 3.24rem;
+    position: absolute;
+    top: -3.24rem;
+    left: 6.4266666667rem; }
+  .welcome #page2 .apple {
+    width: 1.56rem;
+    height: 1.84rem;
+    position: absolute;
+    top: -1.84rem;
+    left: 6.8133333333rem; }
+  .welcome #page2 .orange {
+    width: 1.56rem;
+    height: 1.52rem;
+    position: absolute;
+    top: -1.52rem;
+    left: 5.7466666667rem; }
+  .welcome #page2 .pear {
+    width: 1.5866666667rem;
+    height: 2.2933333333rem;
+    position: absolute;
+    top: -2.2933333333rem;
+    left: 3.24rem; }
+  .welcome #page2 .tomato {
+    width: 1.5333333333rem;
+    height: 1.6533333333rem;
+    position: absolute;
+    top: -1.6533333333rem;
+    left: 1.92rem; }
+  .welcome #page2 .peach {
+    width: 1.6666666667rem;
+    height: 1.56rem;
+    position: absolute;
+    top: -1.56rem;
+    left: 4.44rem; }
+  .welcome #page2 .lock {
+    width: 1.72rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 8.32rem;
+    left: 6.6266666667rem;
+    display: none; }
+  .welcome #page3 .plane {
+    width: 9.6133333333rem;
+    height: 6.0533333333rem;
+    position: absolute;
+    top: -6.0533333333rem;
+    left: 10rem; }
+  .welcome #page3 .vegetable {
+    width: 1.24rem;
+    height: 2.0933333333rem;
+    position: absolute;
+    top: -6.2rem;
+    left: 14.5466666667rem; }
+  .welcome #page3 .solanum {
+    width: 0.9066666667rem;
+    height: 1.6266666667rem;
+    position: absolute;
+    top: -3.8rem;
+    left: 16.4666666667rem; }
+  .welcome #page3 .carrot {
+    width: 1.2266666667rem;
+    height: 2.3733333333rem;
+    position: absolute;
+    top: -6.6rem;
+    left: 16.0666666667rem; }
+  .welcome #page3 .apple {
+    width: 1.0266666667rem;
+    height: 1.2666666667rem;
+    position: absolute;
+    top: -2.72rem;
+    left: 17.6933333333rem; }
+  .welcome #page3 .orange {
+    width: 1.56rem;
+    height: 1.52rem;
+    position: absolute;
+    top: -4.8266666667rem;
+    left: 15.12rem; }
+  .welcome #page3 .pear {
+    width: 1.4133333333rem;
+    height: 2.0266666667rem;
+    position: absolute;
+    top: -5.16rem;
+    left: 12.12rem; }
+  .welcome #page3 .tomato {
+    width: 1.1466666667rem;
+    height: 1.24rem;
+    position: absolute;
+    top: -4.4rem;
+    left: 10.5066666667rem; }
+  .welcome #page3 .peach {
+    width: 1.6666666667rem;
+    height: 1.56rem;
+    position: absolute;
+    top: -4.84rem;
+    left: 13.4666666667rem; }
+  .welcome #page4 .house {
+    width: 3.6133333333rem;
+    height: 3.76rem;
+    position: absolute;
+    top: 5.8rem;
+    left: 3.2rem;
+    display: none; }
+  .welcome #page4 .vegetable {
+    width: 1.24rem;
+    height: 2.0933333333rem;
+    position: absolute;
+    top: 7.7066666667rem;
+    left: -2.0933333333rem; }
+  .welcome #page4 .solanum {
+    width: 0.9866666667rem;
+    height: 1.7733333333rem;
+    position: absolute;
+    top: 5.4666666667rem;
+    left: -0.9866666667rem; }
+  .welcome #page4 .carrot {
+    width: 1.3333333333rem;
+    height: 2.5733333333rem;
+    position: absolute;
+    top: 4.7333333333rem;
+    left: 10rem; }
+  .welcome #page4 .apple {
+    width: 1.0266666667rem;
+    height: 1.2666666667rem;
+    position: absolute;
+    top: 8.9733333333rem;
+    left: 10rem; }
+  .welcome #page4 .orange {
+    width: 1.56rem;
+    height: 1.52rem;
+    position: absolute;
+    top: -1.52rem;
+    left: 7.1466666667rem; }
+  .welcome #page4 .pear {
+    width: 1.4133333333rem;
+    height: 2.0266666667rem;
+    position: absolute;
+    top: -2.0266666667rem;
+    left: 3.4133333333rem; }
+  .welcome #page4 .tomato {
+    width: 1.64rem;
+    height: 1.76rem;
+    position: absolute;
+    top: -1.76rem;
+    left: 1.28rem; }
+  .welcome #page4 .peach {
+    width: 1.6666666667rem;
+    height: 1.56rem;
+    position: absolute;
+    top: -1.56rem;
+    left: 5.16rem; }
+
+/*按钮，始终跟随外盒*/
+.buttons {
+  width: 1.7066666667rem;
+  height: 0.1866666667rem;
+  position: absolute;
+  top: 17.2133333333rem;
+  left: 4.12rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between; }
+  .buttons a {
+    width: 0.1866666667rem;
+    height: 0.1866666667rem;
+    border-radius: 0.0933333333rem 0.0933333333rem 0.0933333333rem 0.0933333333rem;
+    background: #a7c35f; }
+  .buttons .selected {
+    width: 0.4533333333rem; }
+
+/*# sourceMappingURL=css.css.map */
